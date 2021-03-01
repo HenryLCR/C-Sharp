@@ -16,8 +16,8 @@ namespace inventario
         static void listarProductos() {
             Console.Clear();
             Console.WriteLine("");
-            Console.WriteLine("Listado de Productos");
-            Console.WriteLine("********************");
+            Console.WriteLine("-- Listado de Productos --");
+            Console.WriteLine("**************************");
             Console.WriteLine("Codigo, Descripcion y Existencia");
 
             for (int i = 0; i < 5; i++)
