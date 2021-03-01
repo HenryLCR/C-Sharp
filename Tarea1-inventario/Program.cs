@@ -129,6 +129,8 @@ namespace inventario
                 Console.WriteLine("4 - Ajuste Negativo Inventario");
                 Console.WriteLine("5 - Ajuste Positivo Inventario");
                 Console.WriteLine("0 - Salir");
+                Console.WriteLine("");
+                Console.WriteLine("Ingrese la opcion: "); 
                 opcion = Console.ReadLine();
 
                 switch (opcion)
