@@ -12,8 +12,9 @@ namespace _10_Ordenes
             while (true)
             {
                 Console.Clear();
+                Console.WriteLine("=========      ==========");
                 Console.WriteLine("---Sistema de Ordenes---");
-                Console.WriteLine("==========================");
+                Console.WriteLine("=========      ==========");
                 Console.WriteLine("");
                 Console.WriteLine("1 - Lista de Productos");
                 Console.WriteLine("2 - Crear Orden");
