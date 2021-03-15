@@ -69,8 +69,9 @@ public class DatosdePrueba
     public void ListarClientes()
     {
         Console.Clear();
-        Console.WriteLine("Lista de Clientes");
-        Console.WriteLine("=================");
+        Console.WriteLine("========        =========");
+        Console.WriteLine(" ---Lista de Clientes---");
+        Console.WriteLine("========        =========");
         Console.WriteLine("");
         
         foreach (var cliente in ListadeClientes)
@@ -84,8 +85,9 @@ public class DatosdePrueba
     public void ListarVendedores()
     {
         Console.Clear();
-        Console.WriteLine("Lista de Vendedores");
-        Console.WriteLine("===================");
+        Console.WriteLine("=========         =========");
+        Console.WriteLine(" ---Lista de Vendedores---");
+        Console.WriteLine("=========         =========");
         Console.WriteLine("");
         
         foreach (var vendedor in ListadeVendedores)
@@ -98,8 +100,9 @@ public class DatosdePrueba
 
     public void CrearOrden()
     {
-        Console.WriteLine("Creando Orden");
-        Console.WriteLine("=============");
+        Console.WriteLine("======       =======");
+        Console.WriteLine("---Creando Orden---");
+        Console.WriteLine("======       =======");
         Console.WriteLine("");
 
         Console.WriteLine("Ingrese el codigo del cliente: ");
@@ -164,8 +167,9 @@ public class DatosdePrueba
     public void ListarOrdenes()
     {
         Console.Clear();
-        Console.WriteLine("Lista de Ordenes");
-        Console.WriteLine("================");
+        Console.WriteLine("========       ========");
+        Console.WriteLine("---Lista de Ordenes---");
+        Console.WriteLine("========       ========");
         Console.WriteLine("");  
         Console.WriteLine("Codigo | Fecha | Total");
         Console.WriteLine("Cliente | Vendedor");
@@ -174,7 +178,7 @@ public class DatosdePrueba
 
         foreach (var orden in ListaOrdenes)
         {
-            Console.WriteLine(orden.Codigo + " | " + orden.Fecha + " | " + orden.Total);
+            Console.WriteLine(orden.Codigo + " | " + orden.Fecha + " | " + orden.SubTotal + " | " + orden.Impuesto + " | " + orden.Total);
             Console.WriteLine(orden.Cliente.Nombre + " | " + orden.Vendedor.Nombre);
             
             foreach (var detalle in orden.ListaOrdenDetalle)
