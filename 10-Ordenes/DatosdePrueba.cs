@@ -31,31 +31,41 @@ public class DatosdePrueba
 
         Producto p3 = new Producto(3, "Monitor", 4000);
         ListadeProductos.Add(p3);
+
+        Producto p4 = new Producto(4, "USB 16GB", 322);
+        ListadeProductos.Add(p4);
     }
 
     private void cargarClientes()
     {
-        Cliente c1 = new Cliente(1, "Juan", "77777");
+        Cliente c1 = new Cliente(1, " Juan Perez ", "77790232");
         ListadeClientes.Add(c1);
 
-        Cliente c2 = new Cliente(2, "Pedro", "99999");
+        Cliente c2 = new Cliente(2, "Pedro Escobar", "98976573");
         ListadeClientes.Add(c2);
+
+        Cliente c3 = new Cliente(3, "Raul Ramos", "87654534");
+        ListadeClientes.Add(c3);
     }
 
     private void cargarVendedores()
     {
-        Vendedor v1 = new Vendedor(1, "Jose", "V001");
+        Vendedor v1 = new Vendedor(1, "Jose Mendoza", "V001");
         ListadeVendedores.Add(v1);
 
-        Vendedor v2 = new Vendedor(2, "Pablo", "V002");
+        Vendedor v2 = new Vendedor(2, "Pablo Estalon", "V002");
         ListadeVendedores.Add(v2);
+
+        Vendedor v3 = new Vendedor(3, "Willy Rex", "V003");
+        ListadeVendedores.Add(v3);
     }
 
     public void ListarProductos()
     {
         Console.Clear();
-        Console.WriteLine("Lista de Productos");
-        Console.WriteLine("==================");
+        Console.WriteLine("========      =========");
+        Console.WriteLine("---Lista de Productos---");
+        Console.WriteLine("========     ==========");
         Console.WriteLine("");
         
         foreach (var producto in ListadeProductos)
@@ -74,6 +84,7 @@ public class DatosdePrueba
         Console.WriteLine("========        =========");
         Console.WriteLine("");
         
+        Console.WriteLine("Codigo | Nombre Cliente | Telefono");
         foreach (var cliente in ListadeClientes)
         {
             Console.WriteLine(cliente.Codigo + " | " + cliente.Nombre + " | " + cliente.Telefono);
@@ -89,7 +100,7 @@ public class DatosdePrueba
         Console.WriteLine(" ---Lista de Vendedores---");
         Console.WriteLine("=========         =========");
         Console.WriteLine("");
-        
+        Console.WriteLine("Codigo | Vendedor | Telefono");
         foreach (var vendedor in ListadeVendedores)
         {
             Console.WriteLine(vendedor.Codigo + " | " + vendedor.Nombre + " | " + vendedor.CodigoVendedor);
@@ -158,35 +169,43 @@ public class DatosdePrueba
                 break;
             }
         }
-
-        Console.WriteLine("");
-        Console.WriteLine("Total de la orden es de: " + nuevaOrden.Total);
+        Console.WriteLine("SubTotal de la orden es de:    " + nuevaOrden.SubTotal);
+        Console.WriteLine("Impiesto:                      " + nuevaOrden.Impuesto);
+        Console.WriteLine("Total de la orden es de:       " + nuevaOrden.Total);
         Console.ReadLine();
     }
 
     public void ListarOrdenes()
     {
         Console.Clear();
-        Console.WriteLine("========       ========");
+        Console.WriteLine("========      ========");
         Console.WriteLine("---Lista de Ordenes---");
-        Console.WriteLine("========       ========");
+        Console.WriteLine("========      ========");
         Console.WriteLine("");  
-        Console.WriteLine("Codigo | Fecha | Total");
-        Console.WriteLine("Cliente | Vendedor");
         Console.WriteLine("======================");
         Console.WriteLine("");  
 
         foreach (var orden in ListaOrdenes)
         {
-            Console.WriteLine(orden.Codigo + " | " + orden.Fecha + " | " + orden.SubTotal + " | " + orden.Impuesto + " | " + orden.Total);
+            Console.WriteLine("");
+            Console.WriteLine("-Codigo | Fecha ");
+            Console.WriteLine(orden.Codigo + "   |   " + orden.Fecha);
+            Console.WriteLine("");
+            Console.WriteLine("-Subtotal | Impuesto | Total ");
+            Console.WriteLine(orden.SubTotal + " | " + orden.Impuesto + " | " + orden.Total);
+            Console.WriteLine("");
+            Console.WriteLine("-Cliente | Vendedor");
             Console.WriteLine(orden.Cliente.Nombre + " | " + orden.Vendedor.Nombre);
             
+            Console.WriteLine(""); 
+            Console.WriteLine("-Descripcion | Cantidad | Precio");
             foreach (var detalle in orden.ListaOrdenDetalle)
             {
                 Console.WriteLine("     " + detalle.Producto.Descripcion + " | " + detalle.Cantidad + " | " + detalle.Precio);
             }
 
             Console.WriteLine();
+            Console.WriteLine("======================");
         } 
 
         Console.ReadLine();

@@ -27,18 +27,23 @@ namespace _10_Ordenes
                 switch (opcion)
                 {
                     case "1":
+                        Console.Clear();
                         datos.ListarProductos();
                         break;
                     case "2":
+                        Console.Clear();
                         datos.CrearOrden();
                         break;
                     case "3":
+                        Console.Clear();
                         datos.ListarClientes();
                         break;
                     case "4":
+                        Console.Clear();
                         datos.ListarVendedores();
                         break;      
                     case "5":
+                        Console.Clear();
                         datos.ListarOrdenes();
                         break;                                          
                     default:
