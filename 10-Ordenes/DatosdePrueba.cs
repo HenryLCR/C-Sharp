@@ -170,7 +170,7 @@ public class DatosdePrueba
             }
         }
         Console.WriteLine("SubTotal de la orden es de:    " + nuevaOrden.SubTotal);
-        Console.WriteLine("Impiesto:                      " + nuevaOrden.Impuesto);
+        Console.WriteLine("Impuesto:                      " + nuevaOrden.Impuesto);
         Console.WriteLine("Total de la orden es de:       " + nuevaOrden.Total);
         Console.ReadLine();
     }
