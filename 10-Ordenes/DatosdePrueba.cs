@@ -100,7 +100,7 @@ public class DatosdePrueba
         Console.WriteLine(" ---Lista de Vendedores---");
         Console.WriteLine("=========         =========");
         Console.WriteLine("");
-        Console.WriteLine("Codigo | Vendedor | Telefono");
+        Console.WriteLine("Codigo | Vendedor | Codigo Vendedor");
         foreach (var vendedor in ListadeVendedores)
         {
             Console.WriteLine(vendedor.Codigo + " | " + vendedor.Nombre + " | " + vendedor.CodigoVendedor);
