@@ -39,13 +39,11 @@ namespace main
 	      b.Nombre = "Perro";
 	      b.NombreC = "Canis familiaris";
 		  b.Sentido="Ladrido";
-	      
 
 	      Console.WriteLine ("Nombre Comun:" + b.Nombre);
 	      Console.WriteLine ("Nombre Cientifico: " + b.NombreC);
 	      Console.WriteLine ("Grupo: " + b.Grupo);
 	      b.funcionesmamiferos ();
-	      b.aullido ();
 	      Console.WriteLine ("Distintivo de un Perro:" + b.Sentido);
 	      Console.ReadKey ();
 	      Console.WriteLine ("");
@@ -58,10 +56,21 @@ namespace main
 	      Console.WriteLine ("Nombre Comun:" + c.Nombre);
 	      Console.WriteLine ("Nombre Cientifico: " + c.NombreC);
 	      Console.WriteLine ("Grupo: " + c.Grupo);
-
 	      Console.WriteLine ("Distintivo de un Gato: Maullar" );
 	      Console.ReadKey ();
 	      Console.WriteLine ("");
+
+			Mono m = new Mono ();
+	      m.Grupo = "Mamiferos";
+	      m.Nombre = "Mono";
+		  m.Metodo="Maullar";
+
+	      Console.WriteLine ("Nombre Comun:" + m.Nombre);
+	      Console.WriteLine ("Grupo: " + m.Grupo);
+	      Console.WriteLine ("Distintivo de un Mono: " + m.Metodo);
+	      Console.ReadKey ();
+	      Console.WriteLine ("");
+
 	      break;
 	  }
 	  case 2:
@@ -101,6 +110,7 @@ namespace main
           Console.ReadKey();
           Console.WriteLine("");
 	      break;
+		  
 
 	  }
 	  case 3:
