@@ -12,11 +12,7 @@ public abstract class Animal: Reino //esta es Herencia
    
     private void cosasdemamiferos()//esto es encapsulamiento
     {
-        Console.WriteLine("Se ha despertado!");
-        Console.WriteLine("Esta olfateando al rededor");
-        Console.WriteLine("Ha cazado una presa!");
-        Console.WriteLine("Se debora la presa");
-        Console.WriteLine("Se fue a domir");
+      
         
     }
 

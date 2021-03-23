@@ -1,11 +1,13 @@
 ﻿using System;
 namespace main
 {
-  class Animales
+  class Animal
   {
     static void Main ()
     {
+        
       int num;
+	  	Console.Clear ();
         Console.WriteLine ("Elija una opcion");
         Console.WriteLine ("1 Mamiferos");
         Console.WriteLine ("2 Aves");
@@ -32,33 +34,32 @@ namespace main
 	      Console.ReadKey ();
 	      Console.WriteLine ("");
 
-	    Lobo b = new Lobo ();
+	    Perro b = new Perro ();
 	      b.Grupo = "Mamiferos";
-	      b.Nombre = "Lobo";
-	      b.NombreC = "Canis lupus";
-	      b.Sentido = "Tiene un gran sentido del olfato";
+	      b.Nombre = "Perro";
+	      b.NombreC = "Canis familiaris";
+		  b.Sentido="Ladrido";
+	      
 
 	      Console.WriteLine ("Nombre Comun:" + b.Nombre);
 	      Console.WriteLine ("Nombre Cientifico: " + b.NombreC);
 	      Console.WriteLine ("Grupo: " + b.Grupo);
 	      b.funcionesmamiferos ();
 	      b.aullido ();
-	      Console.WriteLine ("Distintivo de un Lobo:" + b.Sentido);
+	      Console.WriteLine ("Distintivo de un Perro:" + b.Sentido);
 	      Console.ReadKey ();
 	      Console.WriteLine ("");
 
-	    Alpaca c = new Alpaca ();
+		   Gato c = new Gato ();
 	      c.Grupo = "Mamiferos";
-	      c.Nombre = "Alpaca";
-	      c.NombreC = "Vicugna pacos";
-	      c.Lana = "Poseen Lana";
+	      c.Nombre = "Gato";
+	      c.NombreC = "Felis silvestris catus";
 
 	      Console.WriteLine ("Nombre Comun:" + c.Nombre);
 	      Console.WriteLine ("Nombre Cientifico: " + c.NombreC);
 	      Console.WriteLine ("Grupo: " + c.Grupo);
-	      c.escupir ();
-	      c.defensasdealpaca ();
-	      Console.WriteLine ("Distintivo de una Alpaca: " + c.Lana);
+
+	      Console.WriteLine ("Distintivo de un Gato: Maullar" );
 	      Console.ReadKey ();
 	      Console.WriteLine ("");
 	      break;
@@ -74,18 +75,29 @@ namespace main
 	      Console.WriteLine ("Nombre Comun:" + k.Nombre);
 	      Console.WriteLine ("Nombre Cientifico: " + k.NombreC);
 	      Console.WriteLine ("Grupo: " + k.Grupo);
-	      k.hablar ();
 	      Console.ReadKey ();
 	      Console.WriteLine ("");
-         Guacamaya p = new Guacamaya();
+
+         Aguila p = new Aguila();
           p.Grupo="Aves"; 
-          p.Nombre="Guacamaya";
-          p.NombreC="Ara macao"; 
+          p.Nombre="Aguila";
+          p.NombreC="Aves de Presa";
+		  p.Metodo="Volar Alto";
          
-          Console.WriteLine("Nombre Comun:"+p.Nombre);
-          Console.WriteLine("Nombre Cientifico: "+p.NombreC);
-          Console.WriteLine("Grupo: "+p.Grupo);
-          p.pico();
+          Console.WriteLine("Nombre Comun:"+ p.Nombre);
+          Console.WriteLine("Metodo: " + p.Metodo);
+          Console.ReadKey();
+          Console.WriteLine("");
+
+		  Loro r = new Loro();
+          r.Grupo="Aves"; 
+          r.Nombre="Loro";
+          r.NombreC="Psittacoidea ";
+		  r.Metodo="Hablar";
+         
+          Console.WriteLine("Nombre Comun:"+ r.Nombre);
+		  Console.WriteLine ("Nombre Cientifico: " + r.NombreC);
+          Console.WriteLine("Metodo: " + r.Metodo);
           Console.ReadKey();
           Console.WriteLine("");
 	      break;
@@ -98,7 +110,7 @@ namespace main
 	      k.Grupo = "Pez";
 	      k.Nombre = "Anguila Electrica";
 	      k.NombreC = "Electrophorus electricus";
-	      k.Aleta=0;
+	      k.Aleta=2;
 	      
 	      Console.WriteLine ("Nombre Comun:" + k.Nombre);
 	      Console.WriteLine ("Nombre Cientifico: " + k.NombreC);
