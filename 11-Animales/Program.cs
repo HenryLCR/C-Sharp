@@ -78,7 +78,7 @@ namespace main
 	    Console.Clear ();
 	    Cuervo k = new Cuervo ();
 	      k.Grupo = "Aves";
-	      k.Nombre = "Corvo";
+	      k.Nombre = "Cuervo";
 	      k.NombreC = "Corvus corax ";
 
 	      Console.WriteLine ("Nombre Comun:" + k.Nombre);
@@ -94,6 +94,7 @@ namespace main
 		  p.Metodo="Volar Alto";
          
           Console.WriteLine("Nombre Comun:"+ p.Nombre);
+		  Console.WriteLine ("Grupo: " + p.Grupo);
           Console.WriteLine("Metodo: " + p.Metodo);
           Console.ReadKey();
           Console.WriteLine("");
@@ -106,6 +107,7 @@ namespace main
          
           Console.WriteLine("Nombre Comun:"+ r.Nombre);
 		  Console.WriteLine ("Nombre Cientifico: " + r.NombreC);
+		  Console.WriteLine ("Grupo: " + r.Grupo);
           Console.WriteLine("Metodo: " + r.Metodo);
           Console.ReadKey();
           Console.WriteLine("");
@@ -117,7 +119,7 @@ namespace main
 	  {
 	      Console.Clear ();
 	      AnguilaElectrica k = new AnguilaElectrica ();
-	      k.Grupo = "Pez";
+	      k.Grupo = "Acuatico Pez";
 	      k.Nombre = "Anguila Electrica";
 	      k.NombreC = "Electrophorus electricus";
 	      k.Aleta=2;
@@ -126,12 +128,11 @@ namespace main
 	      Console.WriteLine ("Nombre Cientifico: " + k.NombreC);
 	      Console.WriteLine ("Grupo: " + k.Grupo);
 	      Console.WriteLine("Numero de Aletas: "+k.Aleta);
-	      k.Elctriciad();
 	      Console.ReadKey ();
 	      Console.WriteLine ("");
           
           PezGlobo p = new PezGlobo();
-          p.Grupo="Aves"; 
+          p.Grupo="Acuatico Pez"; 
           p.Nombre="Pez Globo";
           p.NombreC="Arothron nigropunctatus"; 
           p.Aleta=2;
