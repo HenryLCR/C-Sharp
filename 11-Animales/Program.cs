@@ -5,44 +5,45 @@ namespace main
   {
     static void Main ()
     {
-        
-      int num;
-	  	Console.Clear ();
-        Console.WriteLine ("Elija una opcion");
-        Console.WriteLine ("1 Mamiferos");
-        Console.WriteLine ("2 Aves");
-        Console.WriteLine ("3 Acuaticos");
-        num = Convert.ToInt32 (Console.ReadLine ());
+        while(true)
+		{
+		     int num;
+	  		Console.Clear ();
+        	Console.WriteLine ("Elija una opcion");
+        	Console.WriteLine ("1 Mamiferos");
+        	Console.WriteLine ("2 Aves");
+        	Console.WriteLine ("3 Acuaticos");
+        	num = Convert.ToInt32 (Console.ReadLine ());
 
-      switch (num)
-	{
-	case 1:
-	  {
-	    Console.Clear ();
-	    Leon l = new Leon ();
-	      l.Grupo = "Mamiferos";
-	      l.Nombre = "Leon";
-	      l.NombreC = "Panthera leo";
-	      l.Melena = "Su melena Color Marron";
+      		switch (num)
+			{
+				case 1:
+	  				{
+	    				Console.Clear ();
+	    				Leon l = new Leon ();
+	      				l.Grupo = "Mamiferos";
+	      				l.Nombre = "Leon";
+	      				l.NombreC = "Panthera leo";
+	      				l.Melena = "Su melena Color Marron";
 
-	      Console.WriteLine ("Nombre Comun:" + l.Nombre);
-	      Console.WriteLine ("Nombre Cientifico: " + l.NombreC);
-	      Console.WriteLine ("Grupo: " + l.Grupo);
-	      l.funcionesmamiferos ();
-	      l.rugido ();
-	      Console.WriteLine ("Distintivo de un leon :" + l.Melena);
-	      Console.ReadKey ();
-	      Console.WriteLine ("");
+	      				Console.WriteLine ("Nombre Comun:" + l.Nombre);
+	      				Console.WriteLine ("Nombre Cientifico: " + l.NombreC);
+	      				Console.WriteLine ("Grupo: " + l.Grupo);
+	     				l.funcionesmamiferos ();
+	     				l.rugido ();
+	      				Console.WriteLine ("Distintivo de un leon :" + l.Melena);
+	      				Console.ReadKey ();
+	     				Console.WriteLine ("");
 
-	    Perro b = new Perro ();
-	      b.Grupo = "Mamiferos";
-	      b.Nombre = "Perro";
-	      b.NombreC = "Canis familiaris";
-		  b.Sentido="Ladrido";
+	    				Perro b = new Perro ();
+	      				b.Grupo = "Mamiferos";
+	      				b.Nombre = "Perro";
+	      				b.NombreC = "Canis familiaris";
+		  				b.Sentido="Ladrido";
 
-	      Console.WriteLine ("Nombre Comun:" + b.Nombre);
-	      Console.WriteLine ("Nombre Cientifico: " + b.NombreC);
-	      Console.WriteLine ("Grupo: " + b.Grupo);
+	      				Console.WriteLine ("Nombre Comun:" + b.Nombre);
+	      				Console.WriteLine ("Nombre Cientifico: " + b.NombreC);
+	      				Console.WriteLine ("Grupo: " + b.Grupo);
 	      b.funcionesmamiferos ();
 	      Console.WriteLine ("Distintivo de un Perro:" + b.Sentido);
 	      Console.ReadKey ();
@@ -149,6 +150,11 @@ namespace main
 	  }
 	default:
 	  break;
+	}
+
+		if( num == "0" ){
+			break;
+			}
 	}
 
     }
