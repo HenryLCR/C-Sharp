@@ -5,8 +5,7 @@ namespace main
   {
     static void Main ()
     {
-        while(true)
-		{
+        
 		     int num;
 	  		Console.Clear ();
         	Console.WriteLine ("Elija una opcion");
@@ -152,10 +151,8 @@ namespace main
 	  break;
 	}
 
-		if( num == "0" ){
-			break;
-			}
-	}
+		
+	
 
     }
   }
